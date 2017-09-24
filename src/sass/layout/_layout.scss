@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.form{
+        &__submit{
+            margin-top: 20px;
+        }
+}
+
+.result{
+    font-size: 3em;
+    color: #199EEB;
+    
+}
