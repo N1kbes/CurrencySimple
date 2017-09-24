@@ -1,34 +1,37 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Currency</title>
-        <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Currency converter</h1>
-        <form class="form" id="form">
-            <div class="form__currency group">
-                <input type="number" id="left_value">
-                <select name="form_left-group" id="left-group">
-                    <option value="EUR">EUR</option>
-                    <option value="USD">USD</option>
-                    <option value="RUB">RUB</option>
-                </select>
-                <button type="button" id="reverse-currency" onclick="reverse()">Reverse</button>
-                <select name="form_right-group" id="right-group">
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="RUB">RUB</option>
-                    </select>
-            </div>
-            <div class="form__submit">
-                <button type="button" onclick="submitForm()">Submit</button>
-            </div>
-        </form>
 
-            <div class="result" id="result">
+<head>
+    <title>Currency</title>
+    <meta charset="UTF-8">  
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
 
-            </div>
-        <script src="js/script.js"></script>
-    </body>
+<body>
+    <h1>Currency converter</h1>
+    <form class="form" id="form">
+        <div class="form__currency group">
+            <input type="number" id="left_value">
+            <select name="form_left-group" id="left-group">
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="RUB">RUB</option>
+            </select>
+            <button type="button" id="reverse-currency" onclick="reverse()">Reverse</button>
+            <select name="form_right-group" id="right-group">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="RUB">RUB</option>
+             </select>
+        </div>
+        <div class="form__submit">
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+    </form>
+    <div class="result" id="result">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
 </html>

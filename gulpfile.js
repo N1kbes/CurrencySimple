@@ -3,13 +3,12 @@ connect = require('gulp-connect'),
 sass = require('gulp-sass'),
 autoprefixer = require('gulp-autoprefixer');
 
-
 gulp.task('connect', function() {
-connect.server({
-port: 8080,
-root: 'src',
-livereload: true
-});
+    connect.server({
+        port: 8080,
+        root: 'src',
+        livereload: true
+    });
 });
 
 gulp.task('html', function () {
@@ -34,14 +33,13 @@ gulp.task('sass', function () {
 
 gulp.task('build', function () {
     gulp.src(['./src/js/**', './src/css/**', './src/index.html'],  {base: "./src"})
-    .pipe(gulp.dest('dist'))
-    
+    .pipe(gulp.dest('dist')) 
 });
 
 gulp.task('watch', function () {
-gulp.watch(['./src/*.html'], ['html']);
-gulp.watch('./src/sass/**/*.scss', ['sass']);
-gulp.watch('./src/css/*.css', ['css']);
+    gulp.watch(['./src/*.html'], ['html']);
+    gulp.watch('./src/sass/**/*.scss', ['sass']);
+    gulp.watch('./src/css/*.css', ['css']);
 });
 
 gulp.task('default', ['connect', 'watch']);
